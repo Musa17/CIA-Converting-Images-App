@@ -24,3 +24,11 @@ for k in range(0, canals):
 			(b, g, r) = originalImage[i, j]
 			originalImage[i, j] = (0.299 * r) + (0.587 * g) + (0.114 * b)
 
+newImage = originalImage
+
+# Show new image			
+cv2.namedWindow('New image')
+cv2.imshow('New image', newImage)
+
+cv2.waitKey(0)
+cv2.destroyAllWindows()
